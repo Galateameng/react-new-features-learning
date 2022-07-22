@@ -1,0 +1,25 @@
+h1 {
+  color: #333;
+}
+
+
+.demo-wrap {
+  .demo-nav {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+
+    span {
+      display: inline-block;
+      margin-right: 10px;
+      color: #333;
+      cursor: pointer;
+      padding: 10px 0;
+      margin-right: 10px;
+
+      &.active {
+        color: rgb(255, 98, 0)
+      }
+    }
+
+  }
+}
