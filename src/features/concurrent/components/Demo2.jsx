@@ -1,15 +1,11 @@
-import React, { useState, useTransition } from "react";
+import React from "react";
 
 export default function Demo2() {
-  const [count, updateCount] = useState(0);
-  const [isPending, startTransition] = useTransition();
+  const len = 5000
 
-  const onClick = () => {
-    // 试试不作为startTransition回调执行
-    startTransition(() => {
-      updateCount((count) => count + 1);
-    });
-  };
-
-  return <h3 onClick={onClick}>{count}</h3>;
+  return (
+    <ul>
+      {Array(len).fill(0).map((_, i) => <li key={i}>{i}</li>)}
+    </ul>
+  )
 }
