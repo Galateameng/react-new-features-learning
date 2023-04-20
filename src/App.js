@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { BrowserRouter, Routes, Route, Outlet,  Link,  useMatch, useResolvedPath } from 'react-router-dom'
 import About from './features/about'
-import Home from './features/home'
+import Concurrent from './features/concurrent'
 import Counter from './features/counter'
 import React18 from './features/react18'
 
@@ -9,10 +9,10 @@ import './app.scss'
 
 const menus = [
   {
-    title: 'Home',
+    title: 'Concurrent Mode',
     path: '',
     index: true,
-    element: Home
+    element: Concurrent
   },
   // {
   //   title: 'About',
