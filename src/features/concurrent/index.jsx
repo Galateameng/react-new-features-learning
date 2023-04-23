@@ -3,15 +3,17 @@ import Demo1 from "./components/Demo1";
 import Demo2 from "./components/Demo2";
 import CodeViewer from "./CodeViewer";
 import Demo3 from "./components/Demo3";
+import Demo4 from "./components/MessageChannel";
 
 const DemoList = [
   { label: "Update优先级", component: Demo1 },
   { label: "demo2", component: Demo2 },
-  { label: "Suspense", component: Demo3 }
+  { label: "Suspense", component: Demo3 },
+  { label: "MessageChannel", component: Demo4 }
 ];
 
 const ConcurrentModeDemo = () => {
-  const [demoIndex, setDemoIndex] = useState(2);
+  const [demoIndex, setDemoIndex] = useState(0);
 
   const Demo = useMemo(() => DemoList[demoIndex].component, [demoIndex]);
 

@@ -12,8 +12,8 @@ import { map } from 'lodash';
 
 
 const routeMap = {
-  useId: <UseIdDemo />,
   transition: <TransitionDemo />,
+  useId: <UseIdDemo />,
   useDeferredValue: <UseDeferredValueDemo />,
   Suspense: <SuspenseDemo />,
   // batching: <Batching />,
@@ -21,8 +21,8 @@ const routeMap = {
 
 
 function Layout() {
-  const [activeKey, setActiveKey] =  useState('useId')
-  const [Component, setComponent] = useState(<UseIdDemo />)
+  const [activeKey, setActiveKey] =  useState('transition')
+  const [Component, setComponent] = useState(<TransitionDemo />)
   const [isPending, startTransition] = useTransition();
 
 
