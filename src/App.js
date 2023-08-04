@@ -4,14 +4,21 @@ import About from './features/about'
 import Concurrent from './features/concurrent'
 import Counter from './features/counter'
 import React18 from './features/react18'
+import SWRDemo from './features/SWRDemo'
 
 import './app.scss'
 
 const menus = [
   {
+    title: 'SWR',
+    path: 'swr',
+    index: true,
+    element: SWRDemo
+  },
+  {
     title: 'Concurrent Mode',
     path: '',
-    index: true,
+    index: false,
     element: Concurrent
   },
   // {
