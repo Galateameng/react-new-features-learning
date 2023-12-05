@@ -17,7 +17,7 @@ const menus = [
   },
   {
     title: 'Concurrent Mode',
-    path: '',
+    path: 'concurrentmode',
     index: false,
     element: Concurrent
   },
@@ -95,12 +95,12 @@ function App() {
   return (
     <Fragment>
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          {menus.map(item => <Route key={item.title} index={item.index} path={item.path} element={<item.element />} />)}
-          <Route exact path="*" element={<NoMatch />} />
-        </Route>
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            {menus.map(item => <Route key={item.title} index={item.index} path={item.path} element={<item.element />} />)}
+            <Route exact path="*" element={<NoMatch />} />
+          </Route>
+        </Routes>
       </BrowserRouter>
     </Fragment>
   )
