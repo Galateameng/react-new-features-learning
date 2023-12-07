@@ -5,20 +5,20 @@ import NestedRouting from "./features/MyRouter/02.NestedRouting";
 import QueryParsing from "./features/MyRouter/03.QueryParsing";
 import AuthRouter from "./features/MyRouter/04.AuthRouter";
 import LazyloadDemo1 from "./features/MyRouter/05-1.Lazyload";
-// import LazyloadDemo2 from "./features/MyRouter/05-2.Lazyload";
-
 import ModalRouter from "./features/MyRouter/06.ModalRouter";
+import StepsRouter from './features/MyRouter/07.StepsRouter'
 
 
 
 const routes = [
-  ["01.BasicRouter", BasicRouter],
-  ["02.NestedRouting", NestedRouting],
-  ["03.QueryParsing", QueryParsing],
-  ["04.AuthRouter", AuthRouter],
-  ["05.Lazyload", LazyloadDemo1 ],
-  // ["05-2.LazyloadDemo2", LazyloadDemo2 ],
-  ["06.ModalRouter", ModalRouter ],
+  // ["01.BasicRouter", BasicRouter],
+  // ["02.NestedRouting", NestedRouting],
+  // ["03.QueryParsing", QueryParsing],
+  // ["04.AuthRouter", AuthRouter],
+  // ["05.Lazyload", LazyloadDemo1 ],
+  // ["06.ModalRouter", ModalRouter ],
+  ["07.StepsRouter", StepsRouter ],
+
 
 ];
 

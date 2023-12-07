@@ -2897,6 +2897,13 @@ ansi-styles@^5.0.0:
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-5.2.0.tgz#07449690ad45777d1924ac2abb2fc8895dba836b"
   integrity sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA==
 
+antd-form-builder@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/antd-form-builder/-/antd-form-builder-2.1.4.tgz#e7005f5b88d9fbb9cbd9fe00263260bc3867d9dc"
+  integrity sha512-YPmWyOPuOzCyeFKieDh3sVbx5jeblT5CuwUwzsMYC6IW33YDA1+K7MCiVzw/jO6T7KdIzgiewuWFOTcFQlZsvg==
+  dependencies:
+    eslint-plugin-react-hooks "^4.0.6"
+
 antd@^5.12.1:
   version "5.12.1"
   resolved "https://registry.yarnpkg.com/antd/-/antd-5.12.1.tgz#ab155517a607b4f30f1ea7569ce4cf82697e9aa6"
@@ -4783,7 +4790,7 @@ eslint-plugin-jsx-a11y@^6.5.1:
     minimatch "^3.1.2"
     semver "^6.3.0"
 
-eslint-plugin-react-hooks@^4.3.0:
+eslint-plugin-react-hooks@^4.0.6, eslint-plugin-react-hooks@^4.3.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz#4c3e697ad95b77e93f8646aaa1630c1ba607edd3"
   integrity sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==
