@@ -4,14 +4,14 @@ import BasicRouter from "./features/MyRouter/01.BasicRouter";
 import NestedRouting from "./features/MyRouter/02.NestedRouting";
 import QueryParsing from "./features/MyRouter/03.QueryParsing";
 import TabsPage from "./features/MyRouter/TabsPage";
-import RouterAuth from "./features/MyRouter/RouterAuth";
+import AuthRouter from "./features/MyRouter/04.AuthRouter";
 
 
 const routes = [
   ["01.BasicRouter", BasicRouter],
   ["02.NestedRouting", NestedRouting],
   ["03.QueryParsing", QueryParsing],
-  // ["TabsPage", TabsPage],
+  ["04.AuthRouter", AuthRouter],
   // ["RouterAuth", RouterAuth],
 ];
 
