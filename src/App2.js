@@ -1,14 +1,14 @@
 import { BrowserRouter, RouterProvider } from "react-router-dom";
 
 import BasicRouter from "./features/MyRouter/01.BasicRouter";
-import NestedRouting from "./features/MyRouter/NestedRouting";
+import QueryParsing from "./features/MyRouter/03.QueryParsing";
 import TabsPage from "./features/MyRouter/TabsPage";
 import RouterAuth from "./features/MyRouter/RouterAuth";
 
 
 const routes = [
   ["BasicRouter", BasicRouter],
-  // ["NestedRouting", NestedRouting],
+  ["QueryParsing", QueryParsing],
   // ["TabsPage", TabsPage],
   // ["RouterAuth", RouterAuth],
 ];
