@@ -16,13 +16,13 @@ const routes = [
 
 export default function App() {
   return (
-    <BrowserRouter>
-      {routes.map(([label, Component]) => (
-        <div>
+    <>
+      {routes.map(([label, Component], index) => (
+        <div key={index}>
           <h3 style={{borderBottom: '1px solid #000', margin: '20px 0'}}>{label}</h3>
           <Component />
         </div>
       ))}
-    </BrowserRouter>
+    </>
   );
 }

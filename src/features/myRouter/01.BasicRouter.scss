@@ -19,4 +19,24 @@
       }
     }
   }
+
+  .active {
+    color: orange;
+  }
+}
+
+
+.layout3 {
+  nav {
+    width: 200px;
+
+    ul {
+      display: flex;
+      margin-bottom: 12px;
+
+      li {
+        margin-right: 15px;
+      }
+    }
+  }
 }
