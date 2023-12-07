@@ -7,6 +7,8 @@ import AuthRouter from "./features/MyRouter/04.AuthRouter";
 import LazyloadDemo1 from "./features/MyRouter/05-1.Lazyload";
 import ModalRouter from "./features/MyRouter/06.ModalRouter";
 import StepsRouter from './features/MyRouter/07.StepsRouter'
+import PromptRouter from './features/MyRouter/08.PromptRouter'
+
 
 
 
@@ -17,7 +19,9 @@ const routes = [
   // ["04.AuthRouter", AuthRouter],
   // ["05.Lazyload", LazyloadDemo1 ],
   // ["06.ModalRouter", ModalRouter ],
-  ["07.StepsRouter", StepsRouter ],
+  // ["07.StepsRouter", StepsRouter ],
+  ["08.Prompt", PromptRouter ],
+
 
 
 ];
