@@ -36,7 +36,7 @@ export default function LazyLoadDemo1() {
 
 function Layout() {
   return (
-    <div>
+    <div style={{display: 'flex'}}>
       <nav>
         <ul>
           <li>
@@ -50,8 +50,6 @@ function Layout() {
           </li>
         </ul>
       </nav>
-
-      <hr />
 
       <Outlet />
     </div>
