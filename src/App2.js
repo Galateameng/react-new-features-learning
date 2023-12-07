@@ -4,7 +4,9 @@ import BasicRouter from "./features/MyRouter/01.BasicRouter";
 import NestedRouting from "./features/MyRouter/02.NestedRouting";
 import QueryParsing from "./features/MyRouter/03.QueryParsing";
 import AuthRouter from "./features/MyRouter/04.AuthRouter";
-import LazyloadDemo1 from "./features/MyRouter/05-1.lazyload";
+import LazyloadDemo1 from "./features/MyRouter/05-1.Lazyload";
+import LazyloadDemo2 from "./features/MyRouter/05-2.Lazyload";
+
 
 
 const routes = [
@@ -13,6 +15,8 @@ const routes = [
   ["03.QueryParsing", QueryParsing],
   ["04.AuthRouter", AuthRouter],
   ["05-1.LazyloadDemo1", LazyloadDemo1 ],
+  ["05-2.LazyloadDemo2", LazyloadDemo2 ],
+
 ];
 
 
