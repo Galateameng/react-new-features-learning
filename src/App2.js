@@ -1,49 +1,28 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, RouterProvider } from "react-router-dom";
 
-import MyRouter from "./features/MyRouter/MyRouter";
+import BasicRouter from "./features/MyRouter/01.BasicRouter";
 import NestedRouting from "./features/MyRouter/NestedRouting";
 import TabsPage from "./features/MyRouter/TabsPage";
 import RouterAuth from "./features/MyRouter/RouterAuth";
-// import LazyLoad from "./16/LazyLoad";
-// import Debounce from "./19/Debounce";
-import  './app2.scss'
+
 
 const routes = [
-  ["MyRouter", MyRouter],
-  ["NestedRouting", NestedRouting],
-  ["TabsPage", TabsPage, "/:activeTab?"],
-  ["RouterAuth", RouterAuth],
+  ["BasicRouter", BasicRouter],
+  // ["NestedRouting", NestedRouting],
+  // ["TabsPage", TabsPage],
+  // ["RouterAuth", RouterAuth],
 ];
-const Empty = () => "";
+
+
 export default function App() {
   return (
-    <Router>
-      <div className="app">
-        <Empty />
-        <ul className="sider">
-          {routes.map(([label]) => (
-            <li key={label}>
-              <Link to={`/${label.replace(" ", "/")}`}>{label}</Link>
-            </li>
-          ))}
-        </ul>
-        <div id="pageContainer" className="page-container">
-          <Routes>
-            {routes.map(([label, Component, additionalRoute = ""]) => (
-              <Route
-                key={label}
-                path={`/${label.replace(" ", "/")}${additionalRoute}`}
-                element={<Component />}
-              >
-                
-              </Route>
-            ))}
-            <Route path="/" exact element={<h1>Welcome!</h1>}>
-            </Route>
-            <Route path="*">Page not found.</Route>
-          </Routes>
+    <BrowserRouter>
+      {routes.map(([label, Component]) => (
+        <div>
+          <h3 style={{borderBottom: '1px solid #000', margin: '20px 0'}}>{label}</h3>
+          <Component />
         </div>
-      </div>
-    </Router>
+      ))}
+    </BrowserRouter>
   );
 }

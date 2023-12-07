@@ -1,0 +1,22 @@
+.layout1 {
+  display: flex;
+
+  nav {
+    width: 200px;
+  }
+}
+
+.layout2 {
+  nav {
+    width: 200px;
+
+    ul {
+      display: flex;
+      margin-bottom: 12px;
+
+      li {
+        margin-right: 15px;
+      }
+    }
+  }
+}

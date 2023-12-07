@@ -23,7 +23,7 @@ const Page3 = () => "Page 3";
 
 export default () => {
   return (
-    <>
+    <BrowserRouter>
       <h1>Nested Routing</h1>
       <div className="exp-15-nested-routing">
         <div className="exp-15-sider">
@@ -39,6 +39,6 @@ export default () => {
           </Routes>
         </div>
       </div>
-    </>
+    </BrowserRouter>
   );
 };
