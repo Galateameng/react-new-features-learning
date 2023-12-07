@@ -136,18 +136,10 @@ demo - BasicRoute
 
 ### 嵌套路由
 
-当实现一些较为复杂的应用的时候，
-
-侧边栏+Tab/下拉框or其他形式
-
-1. 每个React组件都可以是路由容器
-2. React Router的声明式语法可以方便的定义嵌套路由
+- 可以在页面的任意位置通过声明式标记去定义路由 
+- 可以表现为各种形式（侧边栏/Tab/下拉框or其他形式）
 
 
-
-### URL查询字符串
-
-- useQueryParam
 
 ### URL传递参数
 
@@ -173,6 +165,10 @@ this.props.match.pramas
 > 建议：页面状态尽量通过URL参数定义（考虑场景：URL转发）
 
 
+
+### URL查询字符串
+
+- useQueryParam
 
 ### 鉴权
 
