@@ -40,7 +40,7 @@ export default function RouterDemo() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout3 />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Page1 />} />
           <Route path="page2" element={<Page2 />} />
           <Route path="page3" element={<Page3 />} />

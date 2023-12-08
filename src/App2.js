@@ -13,14 +13,14 @@ import PromptRouter from './features/MyRouter/08.PromptRouter'
 
 
 const routes = [
-  // ["01.BasicRouter", BasicRouter],
+  ["01.BasicRouter", BasicRouter],
   // ["02.NestedRouting", NestedRouting],
   // ["03.QueryParsing", QueryParsing],
   // ["04.AuthRouter", AuthRouter],
   // ["05.Lazyload", LazyloadDemo1 ],
   // ["06.ModalRouter", ModalRouter ],
   // ["07.StepsRouter", StepsRouter ],
-  ["08.Prompt", PromptRouter ],
+  // ["08.Prompt", PromptRouter ],
 
 
 

@@ -101,7 +101,7 @@ react-router是react生态圈中非常重要的一个部分，用来实现前端
 
 - Link 普通链接，不会触发浏览器更新
 - NavLik 类似Link，但是会添加当前选中状态
-- Prompt 满足条件时提示用户是否离开当前页面
+- Prompt 满足条件时提示用户是否离开当前页面(V5, useBlocker)
 - Redirect 重定向当前页面，eg: 登陆判断
 - Route 路由配置的核心标记，路径匹配时显示对应组件
   - ⚠️ Tips： 不是排他的，当路径匹配时，都会显示
@@ -154,7 +154,8 @@ demo - BasicRoute
 <Route path="/topic/:id" />
 
 // 获取参数
-this.props.match.pramas
+match.pramas
+let { id } = useParams();
 
 ```
 
@@ -193,4 +194,9 @@ this.props.match.pramas
 ### Prompt
 
 ### 其他
+
+- 长列表
+- 服务端路由
+- 不同角色路由白名单
+- ......
 
